@@ -45,7 +45,7 @@ def add_task():
 
         return redirect("/tasks")
 
-    return render_template("add_task.html")
+    return render_template("add_task.html", form=form)
 
 
 @app.route("/done/<int:id>")
