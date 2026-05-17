@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добавить задачу</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Добавить задачу</h1>
+
+    <form method="POST">
+        {{ form.hidden_tag() }}
+
+        {{ form.title.label }}
+        {{ form.title }}
+
+        {{ form.description.label }}
+        {{ form.description }}
+
+        {{ form.submit }}
+    </form>
+
+    <a href="/tasks">← Назад</a>
+</div>
+</body>
+</html>
